@@ -7,3 +7,5 @@ My name is **Rohith Muthukumar**. I am a second-year Physics and Mathematics stu
 
 I'm always looking to learn more about Physics, Mathematics and Computing. Feel free to reach out at [rm64786@eid.utexas.edu](rm64786@eid.utexas.edu)
 
+Check out my notes for classes and research at [[physics]]
+
