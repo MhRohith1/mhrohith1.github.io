@@ -23,8 +23,10 @@ import Breadcrumbs from "./Breadcrumbs"
 import Comments from "./Comments"
 import Flex from "./Flex"
 import ConditionalRender from "./ConditionalRender"
+import AvatarTitle from "./AvatarTitle"
 
 export {
+  AvatarTitle,
   ArticleTitle,
   Content,
   TagContent,

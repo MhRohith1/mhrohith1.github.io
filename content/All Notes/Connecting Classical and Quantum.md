@@ -1,2 +1,2 @@
-[[quantum physics]]
+[[Quantum Physics]]
 [[physics]]

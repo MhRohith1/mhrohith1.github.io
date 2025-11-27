@@ -1,4 +1,4 @@
-[[quantum physics]]
+[[Quantum Physics]]
 
 SPS Talk: 11/25/24 by Dr. Sean Sullivan PhD
 - He is focused on quanutm information science
