@@ -7,10 +7,11 @@ date:
 
 ### Motivating feature scaling:
 -  A model (like linear regression) is going to learn the parameters (weights and biases) based on the value of the feature
-- If, for example, we are looking at prices of houses based on sq. ft. and number of bedrooms, then the sq.ft. feature is going to have large numbers (in the 100s-1000s range) while number of bedrooms is going to be a discrete amount
+- If, for example, we are looking at prices of houses based on sq. ft. and number of bedrooms, then the sq.ft. feature is going to have large numbers (in the 100s-1000s range) while number of bedrooms is going to be a small, discrete amount
 - So a good model will have to adjust the parameters $w_1, w_2$ according to the feature value. in this case, the model would learn to make $w_1$ small because the sq. ft. of a house is a large number, and vice versa for $w_2$. 
 - Looking at a contour plot of the loss, we might see that the contours are very narrow in $w_1$ but very wide in $w_2$. This is because making large changes to $w_2$ will have a small effect on the overall model because the second feature (no. of bedrooms) will only take on small quantities
 	- this will cause gradient descent to take (a relatively) longer amount of time to fully converge onto the correct loss value
+	- This balancing of features is called **fair feature importance**
 ### What is feature scaling?
 - As the name suggests, this is scaling the features of the data set so that the values' ranges are comparable
 - the features are usually scaled to be $\boldsymbol x^i_j \in [0,1]$ or $\boldsymbol x_j^i \in [-1,1]$.
@@ -37,3 +38,4 @@ $$
 \sigma_j = \sqrt{\frac{\sum (\boldsymbol x_j^i - \mu_j)^2}{n-1}}.
 $$
 - Aim to get the values between $\boldsymbol x^i_j \in [-1,1]$ for each $i,j$.
+- **It is important that both the training data and the testing data are normalized!**
