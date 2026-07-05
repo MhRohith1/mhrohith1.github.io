@@ -10,7 +10,7 @@ Right now, I am currently learning from [Andrew Ng's Machine Learning Specializa
 I'm always looking to learn more about Physics, Mathematics and Computing. Feel free to reach  [out to me at my email!](mailto:rm64786@eid.utexas.edu)
 
 ## Highlights:
-- [CV/Resume as of Winter, 2025](/assets/CV_Winter_2025.pdf)
+- [CV/Resume as of Winter, 2025](/assets/CV_Winter_2025_v2.pdf) (Updated Dec 18, 2025)
 - [Fall Semester DRP Presentation (Pauli Matrices)](assets/presentations/DRP_Presentation_Fall_24.pdf)
 - [Spring Semester DRP Presentation (Cauchy-Characteristic Evolution)](assets/presentations/DRP_Presentation_Spring_25.pdf)
 - [Summer DRP Presentation (Differential Topology)](/assets/presentations/DRP_Presentation_Summer_25.pdf)

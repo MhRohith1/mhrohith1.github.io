@@ -14,10 +14,12 @@ date:
 [[DRP - Theoretical Minimum]]
 [[Motivating the Schrödinger Equation]]
 [[Connecting Classical and Quantum]]
+[[Angular momentum]]
+[[Spin]]
+[[The Hydrogen Atom]]
 
 ### Interesting Problem
 [[Why don't protons and electrons of hydrogen just collide?]]
-[[What is Spin??]]
 [[Quantum Particles]]
 
 
