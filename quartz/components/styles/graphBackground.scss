@@ -1,0 +1,99 @@
+.graph-background {
+  inset: 0;
+  opacity: 0.34;
+  overflow: hidden;
+  pointer-events: none;
+  position: fixed;
+  z-index: 4;
+
+  & svg {
+    height: 100%;
+    overflow: visible;
+    pointer-events: none;
+    width: 100%;
+  }
+
+  & line {
+    opacity: 0.65;
+    pointer-events: none;
+    transition:
+      opacity 0.16s ease,
+      stroke-width 0.16s ease;
+    vector-effect: non-scaling-stroke;
+
+    &.active {
+      opacity: 1;
+      stroke-width: 2.1;
+    }
+
+    &.dimmed {
+      opacity: 0.22;
+    }
+  }
+
+  & .graph-background-node {
+    cursor: grab;
+    opacity: 1;
+    pointer-events: auto;
+    transition: opacity 0.16s ease;
+
+    &:active {
+      cursor: grabbing;
+    }
+
+    &.active circle {
+      filter: drop-shadow(0 0 8px color-mix(in srgb, var(--secondary) 65%, transparent));
+      transform: scale(1.35);
+    }
+
+    &.hovered text {
+      opacity: 1;
+    }
+
+    &.dimmed {
+      opacity: 0.28;
+    }
+  }
+
+  & circle {
+    filter: drop-shadow(0 0 4px color-mix(in srgb, var(--secondary) 35%, transparent));
+    pointer-events: auto;
+    transform-box: fill-box;
+    transform-origin: center;
+    transition:
+      filter 0.16s ease,
+      transform 0.16s ease;
+  }
+
+  & text {
+    fill: var(--dark);
+    font-family: var(--bodyFont);
+    font-size: 0.72rem;
+    font-weight: 600;
+    opacity: 0;
+    paint-order: stroke;
+    pointer-events: none;
+    stroke: var(--light);
+    stroke-linejoin: round;
+    stroke-width: 4px;
+    transition: opacity 0.14s ease;
+    user-select: none;
+  }
+}
+
+.page {
+  isolation: isolate;
+}
+
+.sidebar,
+.center,
+.page-footer {
+  position: relative;
+  z-index: 3;
+}
+
+@media (max-width: 800px) {
+  .graph-background {
+    opacity: 0.22;
+  }
+}
