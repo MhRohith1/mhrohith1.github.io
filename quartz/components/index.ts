@@ -24,6 +24,7 @@ import Comments from "./Comments"
 import Flex from "./Flex"
 import ConditionalRender from "./ConditionalRender"
 import AvatarTitle from "./AvatarTitle"
+import GraphBackground from "./GraphBackground"
 
 export {
   AvatarTitle,
@@ -52,4 +53,5 @@ export {
   Comments,
   Flex,
   ConditionalRender,
+  GraphBackground,
 }
